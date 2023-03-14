@@ -44,12 +44,26 @@ p {
 }
 ```
 
+## Install
+
+### npm
+
+```bash
+npm install vite-join-media-queries --save-dev
+```
+
+### yarn
+
+```bash
+yarn add vite-join-media-queries --dev
+```
+
 ## Usage
 
 **/vite.config.js**
 
 ```typescript
-import viteJoinMediaQueries from './plugins/vite-join-media-queries.js';
+import viteJoinMediaQueries from 'vite-join-media-queries';
 
 export default defineConfig({
   plugins: [

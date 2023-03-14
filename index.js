@@ -17,7 +17,7 @@ async function combineMediaQueries(filePath, cssnanoConfig) {
 module.exports = function ({
   paths2css = ['./dist/assets'],
   cssnanoConfig = { preset: 'default' },
-}) {
+} = {}) {
   return {
     name: 'vite-join-media-queries',
     enforce: 'post',
