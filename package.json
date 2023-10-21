@@ -1,6 +1,6 @@
 {
   "name": "vite-join-media-queries",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,5 +16,13 @@
     "cssnano": "^5.1.15",
     "postcss": "^8.4.21",
     "postcss-combine-media-query": "^1.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aleksandr-JS-Developer/vite-join-media-queries.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Aleksandr-JS-Developer/vite-join-media-queries/issues"
+  },
+  "homepage": "https://github.com/Aleksandr-JS-Developer/vite-join-media-queries#readme"
 }
