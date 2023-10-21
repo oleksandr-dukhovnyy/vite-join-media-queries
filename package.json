@@ -1,7 +1,7 @@
 {
   "name": "vite-join-media-queries",
   "version": "0.1.2",
-  "description": "",
+  "description": "Optimize the css bundle in applications that use vite",
   "main": "index.js",
   "scripts": {
     "test": "jest"
