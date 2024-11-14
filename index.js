@@ -3,17 +3,6 @@ const postcss = require('postcss');
 const cssnano = require('cssnano');
 const combineMediaQuery = require('postcss-combine-media-query');
 
-async function combineMediaQueries(filePath, cssnanoConfig) {
-  const css = fs.readFileSync(filePath, 'utf8');
-
-  const result = await postcss()
-    .use(combineMediaQuery())
-    .use(cssnano(cssnanoConfig))
-    .process(css, { from: filePath });
-
-  fs.writeFileSync(filePath, result.css, 'utf8');
-}
-
 module.exports = function ({
   paths2css = ['./dist/assets'],
   cssnanoConfig = { preset: 'default' },
@@ -36,3 +25,14 @@ module.exports = function ({
     },
   };
 };
+
+async function combineMediaQueries(filePath, cssnanoConfig) {
+  const css = fs.readFileSync(filePath, 'utf8');
+
+  const result = await postcss()
+    .use(combineMediaQuery())
+    .use(cssnano(cssnanoConfig))
+    .process(css, { from: filePath });
+
+  fs.writeFileSync(filePath, result.css, 'utf8');
+}

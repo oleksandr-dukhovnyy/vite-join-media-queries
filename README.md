@@ -65,13 +65,15 @@ yarn add vite-join-media-queries --dev
 ```typescript
 import viteJoinMediaQueries from 'vite-join-media-queries';
 
+interface Config {
+  paths2css?: string[];
+  cssnanoConfig?: Object;
+}
+
+const config: Config = {};
+
 export default defineConfig({
-  plugins: [
-    viteJoinMediaQueries({
-      paths2css: Array<string>,
-      cssnanoConfig: object,
-    }),
-  ],
+  plugins: [viteJoinMediaQueries(config)],
 });
 ```
 
